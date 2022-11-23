@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                
+
                 Subtracao = 1 - 1;
                 EditText textResultado = findViewById(R.id.txtResultado);
                 textResultado.setText(Subtracao);
