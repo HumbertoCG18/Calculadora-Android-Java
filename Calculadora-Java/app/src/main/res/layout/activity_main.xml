@@ -42,9 +42,39 @@
         android:layout_height="wrap_content"
         android:text="Subtrair"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="337dp" />
+        tools:layout_editor_absoluteY="305dp" />
+
+    <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.768"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/btnDividir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dividir"
+        app:layout_constraintEnd_toStartOf="@+id/btnMultiplicar"
+        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/btnSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Somar"
+        app:layout_constraintEnd_toStartOf="@+id/btnSubtracao"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="309dp" />
 
     <TextView
         android:id="@+id/txtValor2"
@@ -53,16 +83,6 @@
         android:text="Segundo Valor"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="211dp" />
-
-    <Button
-        android:id="@+id/btnSoma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Somar"
-        app:layout_constraintEnd_toStartOf="@+id/btnSubtracao"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="337dp" />
 
     <TextView
         android:id="@+id/txtTitulo"
@@ -75,41 +95,36 @@
         tools:layout_editor_absoluteY="53dp" />
 
     <TextView
+        android:id="@+id/titleResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="268dp"
+        android:text="Resultado:"
+        android:textSize="30"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/txtResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textSize="20"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="522dp" />
+        app:layout_constraintTop_toBottomOf="@+id/titleResultado"
+        app:layout_constraintVertical_bias="0.045" />
 
     <Button
-        android:id="@+id/btnMultiplicar"
+        android:id="@+id/btnTela2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Multiplicar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.823"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="396dp" />
-
-    <Button
-        android:id="@+id/btnDividir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Dividir"
-        app:layout_constraintEnd_toStartOf="@+id/btnMultiplicar"
-        app:layout_constraintHorizontal_bias="0.527"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="396dp" />
-
-    <TextView
-        android:id="@+id/titleResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resultado:"
+        android:text="Calculadora IMC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="485dp" />
+        tools:layout_editor_absoluteY="666dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
