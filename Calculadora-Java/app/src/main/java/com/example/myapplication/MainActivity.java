@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnSoma = findViewById(R.id.btnSoma);
+        btnSoma = findViewById(R.id.btnSoma);
         btnSoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnSubtracao = findViewById(R.id.btnSubtracao);
+        btnSubtracao = findViewById(R.id.btnSubtracao);
         btnSubtracao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnMultiplicar = findViewById(R.id.btnSubtracao);
+        btnMultiplicar = findViewById(R.id.btnSubtracao);
         btnMultiplicar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btnDividir = findViewById(R.id.btnSubtracao);
+        btnDividir = findViewById(R.id.btnSubtracao);
         btnDividir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
