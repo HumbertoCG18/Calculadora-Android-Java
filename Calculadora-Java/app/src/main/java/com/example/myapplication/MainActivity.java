@@ -11,8 +11,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btnSoma, btnSubtracao, btnMultiplicar, btnDividir, btnTela2;
-    Integer textValor1, textValor2, Soma, Subtracao, Multiplicar, Dividir;
-    EditText textResultado;
+    Integer Soma, Subtracao, Multiplicar, Dividir;
+    EditText edtValor1, edtValor2;
+    TextView txtResultado;
+    Intent i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +25,12 @@ public class MainActivity extends AppCompatActivity {
         btnSoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                edtValor1 = findViewById(R.id.edtValor1);
+                edtValor2 = findViewById(R.id.edtValor2);
+
                 Soma = 1 + 1;
-                TextView textResultado = findViewById(R.id.txtResultado);
-                textResultado.setText(Soma);
+                txtResultado = findViewById(R.id.txtResultado);
+                txtResultado.setText(Soma);
             }
         });
 
@@ -33,9 +38,12 @@ public class MainActivity extends AppCompatActivity {
         btnSubtracao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                edtValor1 = findViewById(R.id.edtValor1);
+                edtValor2 = findViewById(R.id.edtValor2);
+
                 Subtracao = 1 - 1;
-                TextView textResultado = findViewById(R.id.txtResultado);
-                textResultado.setText(Subtracao);
+                txtResultado = findViewById(R.id.txtResultado);
+                txtResultado.setText(Subtracao);
             }
         });
 
@@ -43,9 +51,12 @@ public class MainActivity extends AppCompatActivity {
         btnMultiplicar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                edtValor1 = findViewById(R.id.edtValor1);
+                edtValor2 = findViewById(R.id.edtValor2);
+
                 Multiplicar = 1 * 1;
-                TextView textResultado = findViewById(R.id.txtResultado);
-                textResultado.setText(Multiplicar);
+                txtResultado = findViewById(R.id.txtResultado);
+                txtResultado.setText(Multiplicar);
             }
         });
 
@@ -53,16 +64,19 @@ public class MainActivity extends AppCompatActivity {
         btnDividir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                edtValor1 = findViewById(R.id.edtValor1);
+                edtValor2 = findViewById(R.id.edtValor2);
+
                 Dividir = 1 * 1;
-                TextView textResultado = findViewById(R.id.txtResultado);
-                textResultado.setText(Dividir);
+                txtResultado = findViewById(R.id.txtResultado);
+                txtResultado.setText(Dividir);
             }
         });
 
         btnTela2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, CalculadoraIMC.class);
+                i = new Intent(MainActivity.this, CalculadoraIMC.class);
                 startActivity(i);
             }
         });

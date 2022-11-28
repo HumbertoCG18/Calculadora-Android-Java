@@ -43,7 +43,7 @@
         tools:layout_editor_absoluteY="53dp" />
 
     <EditText
-        android:id="@+id/editValor"
+        android:id="@+id/edtAltura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -77,7 +77,7 @@
         tools:layout_editor_absoluteY="655dp" />
 
     <EditText
-        android:id="@+id/editValor3"
+        android:id="@+id/edtPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"

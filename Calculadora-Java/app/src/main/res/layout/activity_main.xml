@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editValor1"
+        android:id="@+id/edtValor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -18,7 +18,7 @@
         tools:layout_editor_absoluteY="139dp" />
 
     <EditText
-        android:id="@+id/editValor2"
+        android:id="@+id/edtValor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
