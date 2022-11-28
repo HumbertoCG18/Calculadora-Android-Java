@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 edtValor2 = findViewById(R.id.edtValor2);
 
                 Soma = 1 + 1;
+
                 txtResultado = findViewById(R.id.txtResultado);
                 txtResultado.setText(Soma);
             }
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 edtValor2 = findViewById(R.id.edtValor2);
 
                 Subtracao = 1 - 1;
+
                 txtResultado = findViewById(R.id.txtResultado);
                 txtResultado.setText(Subtracao);
             }
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 edtValor2 = findViewById(R.id.edtValor2);
 
                 Multiplicar = 1 * 1;
+
                 txtResultado = findViewById(R.id.txtResultado);
                 txtResultado.setText(Multiplicar);
             }
@@ -68,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
                 edtValor2 = findViewById(R.id.edtValor2);
 
                 Dividir = 1 * 1;
+
                 txtResultado = findViewById(R.id.txtResultado);
                 txtResultado.setText(Dividir);
             }
