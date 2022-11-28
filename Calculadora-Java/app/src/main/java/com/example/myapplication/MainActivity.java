@@ -6,10 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSoma, btnSubtracao;
-    Integer textValor1, textValor2, Soma, Subtracao;
+    Button btnSoma, btnSubtracao, btnMultiplicar, btnDividir;
+    Integer textValor1, textValor2, Soma, Subtracao, Multiplicar, Dividir;
     EditText textResultado;
 
     @Override
@@ -21,11 +22,8 @@ public class MainActivity extends AppCompatActivity {
         btnSoma.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
                 Soma = 1 + 1;
-                EditText textResultado = findViewById(R.id.txtResultado);
+                TextView textResultado = findViewById(R.id.txtResultado);
                 textResultado.setText(Soma);
             }
         });
@@ -34,11 +32,29 @@ public class MainActivity extends AppCompatActivity {
         btnSubtracao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 Subtracao = 1 - 1;
-                EditText textResultado = findViewById(R.id.txtResultado);
+                TextView textResultado = findViewById(R.id.txtResultado);
                 textResultado.setText(Subtracao);
+            }
+        });
+
+        Button btnMultiplicar = findViewById(R.id.btnSubtracao);
+        btnMultiplicar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Multiplicar = 1 * 1;
+                TextView textResultado = findViewById(R.id.txtResultado);
+                textResultado.setText(Multiplicar);
+            }
+        });
+
+        Button btnDividir = findViewById(R.id.btnSubtracao);
+        btnDividir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Dividir = 1 * 1;
+                TextView textResultado = findViewById(R.id.txtResultado);
+                textResultado.setText(Dividir);
             }
         });
     }
