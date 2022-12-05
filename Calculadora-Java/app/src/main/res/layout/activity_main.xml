@@ -82,7 +82,8 @@
         android:layout_height="wrap_content"
         android:text="Segundo Valor"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="211dp" />
+        tools:layout_editor_absoluteY="211dp"
+        tools:text="Seugndo Valor" />
 
     <TextView
         android:id="@+id/txtTitulo"
