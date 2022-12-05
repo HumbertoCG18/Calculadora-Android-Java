@@ -12,8 +12,8 @@ import android.widget.TextView;
 public class Tela_Registro extends AppCompatActivity {
     Button btnVoltar2, btnCadastro;
     EditText edtNome, edtEmail, edtTelefone;
-    TextView txtNome, txtTelefone, txtEmail, txtCadastroConf;
-    String Cadastro;
+    String Nome, Email, Telefone, CadResultado;
+    TextView txtResultado2;
     Intent i;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +34,19 @@ public class Tela_Registro extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 edtNome = findViewById(R.id.edtNome);
+                Nome = edtNome.getText().toString().trim();
+
                 edtEmail = findViewById(R.id.edtEmail);
+                Email = edtEmail.getText().toString().trim();
+
                 edtTelefone = findViewById(R.id.edtTelefone);
+                Telefone = edtTelefone.getText().toString().trim();
+
+                CadResultado = Nome+Email+Telefone;
+
+                txtResultado2 = findViewById(R.id.txtResultado2);
+                txtResultado2.setText(CadResultado);
+
             }
         });
     }
