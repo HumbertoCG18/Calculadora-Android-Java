@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button btnSoma, btnSubtracao, btnMultiplicar, btnDividir, btnTela2;
+    Button btnSoma, btnSubtracao, btnMultiplicar, btnDividir, btnTela2, btnTela3;
     Integer Soma, Subtracao, Multiplicar, Dividir;
     EditText edtValor1, edtValor2;
     TextView txtResultado;
@@ -81,6 +81,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 i = new Intent(MainActivity.this, CalculadoraIMC.class);
+                startActivity(i);
+            }
+        });
+
+        btnTela3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                i = new Intent(MainActivity.this, Tela_Registro.class);
                 startActivity(i);
             }
         });
