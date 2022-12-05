@@ -42,11 +42,10 @@ public class Tela_Registro extends AppCompatActivity {
                 edtTelefone = findViewById(R.id.edtTelefone);
                 Telefone = edtTelefone.getText().toString().trim();
 
-                CadResultado = Nome+Email+Telefone;
+                CadResultado = Nome + Email + Telefone;
 
                 txtResultado2 = findViewById(R.id.txtResultado2);
                 txtResultado2.setText(CadResultado);
-
             }
         });
     }
