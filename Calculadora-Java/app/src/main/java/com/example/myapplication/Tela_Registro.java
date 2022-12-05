@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Tela_Registro extends AppCompatActivity {
-    Button btnVoltar2, btnCadastrar;
+    Button btnVoltar2, btnCadastro;
     EditText edtNome, edtEmail, edtTelefone;
     TextView txtNome, txtTelefone, txtEmail, txtCadastroConf;
     String Cadastro;
@@ -26,6 +26,16 @@ public class Tela_Registro extends AppCompatActivity {
             public void onClick(View view) {
                 i = new Intent(Tela_Registro.this, MainActivity.class);
                 startActivity(i);
+            }
+        });
+
+        btnCadastro = findViewById(R.id.btnCadastro);
+        btnCadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edtNome = findViewById(R.id.edtNome);
+                edtEmail = findViewById(R.id.edtEmail);
+                edtTelefone = findViewById(R.id.edtTelefone);
             }
         });
     }
