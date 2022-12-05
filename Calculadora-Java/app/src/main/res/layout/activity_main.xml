@@ -12,10 +12,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edtValor2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="139dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
 
     <EditText
         android:id="@+id/edtValor2"
@@ -23,66 +25,85 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="230dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.335" />
 
     <TextView
         android:id="@+id/txtValor1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Primeiro Valor"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="120dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
 
     <Button
         android:id="@+id/btnSubtracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Subtrair"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
 
     <Button
         android:id="@+id/btnMultiplicar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Multiplicar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.768"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSubtracao"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnDividir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dividir"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnMultiplicar"
-        app:layout_constraintHorizontal_bias="0.758"
+        app:layout_constraintHorizontal_bias="0.798"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="364dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSoma"
+        app:layout_constraintVertical_bias="0.012" />
 
     <Button
         android:id="@+id/btnSoma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Somar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnSubtracao"
-        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
 
     <TextView
         android:id="@+id/txtValor2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Segundo Valor"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="211dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296"
         tools:text="Seugndo Valor" />
 
     <TextView
@@ -90,22 +111,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculadora"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="53dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064" />
 
     <TextView
         android:id="@+id/titleResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="268dp"
         android:text="Resultado:"
         android:textSize="30"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
 
     <TextView
         android:id="@+id/txtResultado"
@@ -125,9 +149,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Calculadora IMC"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="666dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTela3"
+        app:layout_constraintVertical_bias="0.578" />
 
     <Button
         android:id="@+id/btnTela3"
@@ -136,7 +163,6 @@
         android:text="Registrar-Se"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.874" />
